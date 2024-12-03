@@ -1,0 +1,61 @@
+
+.ejercicio {
+  background-color: rgba(45, 62, 80, 0.95);
+  color: #ffffff;
+  padding: 5rem;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
+  width: 80%;
+  font-size: 4rem;
+
+}
+
+h2 {
+  color: #ffcc00;
+  margin: 15px;
+  font-size: 6rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 2.5rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+.correct {
+  color: #01b10f;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: #ff1100;
+  font-weight: bold;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #00c853;
+  font-weight: bold;
+}

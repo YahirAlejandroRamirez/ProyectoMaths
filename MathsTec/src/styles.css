@@ -1,0 +1,13 @@
+
+body {
+    background-image: url('/tec2.jpg'); /* Ajusta la ruta de la imagen según la ubicación en tu proyecto */
+    background-size: cover;        /* Ajusta la imagen para que cubra toda la pantalla */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    background-attachment: fixed;  /* La imagen de fondo permanece fija al hacer scroll */
+    background-position: center;   /* Centra la imagen en la pantalla */
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

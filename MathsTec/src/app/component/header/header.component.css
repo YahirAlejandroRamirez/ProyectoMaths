@@ -1,0 +1,18 @@
+.header {
+    background-color: #1B396D;
+    color: #ffffff;
+    padding: 1.2rem;
+    text-align: center;
+  }
+  
+  .header-content h1 {
+    margin: 0;
+    font-size: 5rem;
+  }
+  
+  .header-content p {
+    margin: 1rem 4 4;
+    font-size: 3rem;
+  }
+
+

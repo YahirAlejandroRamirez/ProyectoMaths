@@ -1,0 +1,37 @@
+<div class="ejercicio">
+<div *ngIf="exercises.length; else loading">
+    <div *ngIf="currentExerciseIndex < exercises.length; else completed">
+      <h2>Ejercicio {{ currentExerciseIndex + 1 }}</h2>
+      <p>{{ exercises[currentExerciseIndex].question }}</p>
+  
+      <ul>
+        <li *ngFor="let option of exercises[currentExerciseIndex].options">
+          <input
+            type="radio"
+            name="answer"
+            [value]="option.text"
+            [(ngModel)]="selectedOption"
+          />
+          {{ option.text }}
+        </li>
+      </ul>
+  
+      <button (click)="submitAnswer()">Enviar Respuesta</button>
+  
+      <p *ngIf="feedback" [class.correct]="feedback.includes('Correcto')" [class.incorrect]="feedback.includes('Incorrecto')">
+        {{ feedback }}
+      </p>
+  
+      <button *ngIf="feedback" (click)="nextExercise()">Siguiente</button>
+    </div>
+  
+    <ng-template #completed>
+      <h2>¡Has completado todos los ejercicios! 🎉</h2>
+      <p class="result">Aciertos: {{ score }} / {{ exercises.length }}</p>
+    </ng-template>
+  </div>
+  
+  <ng-template #loading>
+    <p>Cargando ejercicios...</p>
+  </ng-template>
+  
